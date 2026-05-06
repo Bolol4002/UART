@@ -2,7 +2,7 @@ module uart_tx (
     input  wire       clk,
     input  wire       rst,
 
-    input  wire       baud_tick,   // 1-cycle pulse per bit period
+    input  wire       baud_tick,   
     input  wire       tx_start,
     input  wire [7:0] data_in,
 

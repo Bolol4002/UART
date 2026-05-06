@@ -15,6 +15,4 @@ There are two imp signals
 
 THe main puropose is to transmit and recieve serial data intended for serial communication.
 
-
-
 ![Architecture Diagram](scrn/dig.png)

@@ -26,3 +26,15 @@ From this , the data will be transmitted on the transmission line serially, bit 
 |Method of transmission|asynchrounous|
 |Max no. of masters|1|
 |Max no. of slaves|1|
+
+---
+
+## Data Transmission
+
+![UART packet](scrn/frame.png)
+
+UART is in the form of a packet - the peice that connects transmitter and reciever.
+
+- Start bit - Data transmission line is usually high (no data transmission). To start the transmission line is pulled from high to low for one clock cycle. When the reciving UART detects the high to low voltage transition , it begins reading the bits in the data frame at the frequency of the baud rate.
+
+- Data frame - Contains the acutal data can be 5 to 8 bits long if a parity bit is used. If no parity it can transmit upto 9 bits. 

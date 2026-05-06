@@ -9,3 +9,12 @@ Embedded systems, microcontrollers, and computers mostly use UART as a form of d
 
 IT is a hardware communication protocol that uses asynchrounus (no clock signal) serial communication with configurable speed.  
 
+There are two imp signals
+- transimitter
+- reciever
+
+THe main puropose is to transmit and recieve serial data intended for serial communication.
+
+
+
+![Architecture Diagram](images/diagram.png)

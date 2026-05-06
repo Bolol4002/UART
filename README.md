@@ -17,4 +17,4 @@ THe main puropose is to transmit and recieve serial data intended for serial com
 
 
 
-![Architecture Diagram](images/diagram.png)
+![Architecture Diagram](scrn/dig.png)

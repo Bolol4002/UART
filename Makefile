@@ -2,7 +2,7 @@
 
 %:
 	@echo "=== Compiling ===" && \
-	iverilog -o sim.vvp src/$@.v tb/$@_tb.v && \
+	iverilog -o sim.vvp src/*.v tb/$@_tb.v && \
 	echo "=== Simulation Output ===" && \
 	vvp sim.vvp && \
 	echo "=== Opening GTKWave ===" && \

@@ -1,14 +1,14 @@
 module baud_gen #(
     parameter CLKS_PER_BIT = 434
 )(
-    input  wire clk,
-    input  wire rst,
+    input clk,
+    input rst,
 
     output reg baud_tick
 );
     reg [15:0] clk_count;
 
-    always @(posedge clk or posedge rst) begin
+    always @(posedge clk) begin
         if (rst) begin
             clk_count <= 0;
             baud_tick <= 0;
@@ -22,3 +22,4 @@ module baud_gen #(
             end
         end
     end
+endmodule
